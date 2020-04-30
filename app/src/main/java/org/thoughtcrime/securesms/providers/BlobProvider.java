@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.annotation.WorkerThread;
 
+import org.thoughtcrime.securesms.BuildConfig;
 import org.thoughtcrime.securesms.crypto.AttachmentSecret;
 import org.thoughtcrime.securesms.crypto.AttachmentSecretProvider;
 import org.thoughtcrime.securesms.crypto.ModernDecryptingPartInputStream;
@@ -43,8 +44,8 @@ public class BlobProvider {
   private static final String MULTI_SESSION_DIRECTORY  = "multi_session_blobs";
   private static final String SINGLE_SESSION_DIRECTORY = "single_session_blobs";
 
-  public static final Uri        CONTENT_URI = Uri.parse("content://org.thoughtcrime.securesms/blob");
-  public static final String     AUTHORITY   = "org.thoughtcrime.securesms";
+  public static final Uri        CONTENT_URI = Uri.parse("content://" + BuildConfig.APPLICATION_ID + "/blob");
+  public static final String     AUTHORITY   = BuildConfig.APPLICATION_ID; //"org.thoughtcrime.securesms";
   public static final String     PATH        = "blob/*/*/*/*/*";
 
   private static final int STORAGE_TYPE_PATH_SEGMENT = 1;

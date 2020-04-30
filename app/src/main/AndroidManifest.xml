@@ -5,7 +5,7 @@
 
     <uses-sdk tools:overrideLibrary="androidx.camera.core,androidx.camera.camera2,androidx.camera.lifecycle" />
 
-    <permission android:name="org.thoughtcrime.securesms.ACCESS_SECRETS"
+    <permission android:name="${applicationId}.ACCESS_SECRETS"
                 android:label="Access to TextSecure Secrets"
                 android:protectionLevel="signature" />
 
@@ -20,7 +20,7 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
-    <uses-permission android:name="org.thoughtcrime.securesms.ACCESS_SECRETS"/>
+    <uses-permission android:name="${applicationId}.ACCESS_SECRETS"/>
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.WRITE_PROFILE"/>
     <uses-permission android:name="android.permission.BROADCAST_WAP_PUSH"
@@ -133,7 +133,9 @@
     <activity android:name=".PromptMmsActivity"
               android:label="Configure MMS Settings"
               android:windowSoftInputMode="stateUnchanged"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".DeviceProvisioningActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
@@ -143,6 +145,7 @@
             <category android:name="android.intent.category.BROWSABLE" />
             <data android:scheme="tsdevice"/>
         </intent-filter>
+        <meta-data android:name="is_signal_activity" android:value="true"/>
     </activity>
 
     <activity android:name=".preferences.MmsPreferencesActivity"
@@ -178,6 +181,7 @@
       <meta-data
           android:name="android.service.chooser.chooser_target_service"
                 android:value=".service.DirectShareService" />
+        <meta-data android:name="is_signal_activity" android:value="true"/>
 
     </activity>
 
@@ -202,6 +206,7 @@
                   android:host="signal.art"
                   android:pathPrefix="/addstickers"/>
         </intent-filter>
+        <meta-data android:name="is_signal_activity" android:value="true"/>
     </activity>
 
     <activity-alias android:name=".RoutingActivity"
@@ -212,14 +217,46 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
             <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            <category android:name="com.prism.hider.vault.CATEGORY_VAULT_ENTRY" />
         </intent-filter>
 
         <meta-data android:name="com.sec.minimode.icon.portrait.normal"
                    android:resource="@mipmap/ic_launcher" />
         <meta-data android:name="com.sec.minimode.icon.landscape.normal"
                    android:resource="@mipmap/ic_launcher" />
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+
+        <meta-data android:name="vault_entry_order" android:value="0" />
+        <meta-data android:name="vault_ui_id" android:value="vault_ui_id_calculator" />
 
     </activity-alias>
+
+        <activity-alias android:name=".Disguise01"
+            android:targetActivity=".MainActivity"
+            android:exported="true"
+            android:enabled="false"
+            android:icon="@mipmap/ic_vault_cal_aosp"
+            android:label="@string/vault_name_cal"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+                <category android:name="com.prism.hider.vault.CATEGORY_VAULT_ENTRY" />
+            </intent-filter>
+
+            <meta-data android:name="com.sec.minimode.icon.portrait.normal"
+                android:resource="@mipmap/ic_launcher" />
+            <meta-data android:name="com.sec.minimode.icon.landscape.normal"
+                android:resource="@mipmap/ic_launcher" />
+            <meta-data android:name="is_signal_activity" android:value="true"/>
+            <meta-data android:name="vault_entry_order" android:value="1" />
+            <meta-data android:name="vault_ui_id" android:value="vault_ui_id_calculator" />
+
+        </activity-alias>
+
+
 
     <activity android:name=".conversation.ConversationActivity"
               android:windowSoftInputMode="stateUnchanged"
@@ -229,9 +266,12 @@
         <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.thoughtcrime.securesms.MainActivity" />
+        <meta-data android:name="is_signal_activity" android:value="true"/>
     </activity>
 
-    <activity android:name=".longmessage.LongMessageActivity" />
+    <activity android:name=".longmessage.LongMessageActivity" >
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".conversation.ConversationPopupActivity"
               android:windowSoftInputMode="stateVisible"
@@ -239,71 +279,99 @@
               android:taskAffinity=""
               android:excludeFromRecents="true"
               android:theme="@style/TextSecure.LightTheme.Popup"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" >
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".MessageDetailsActivity"
               android:label="@string/AndroidManifest__message_details"
               android:windowSoftInputMode="stateHidden"
               android:launchMode="singleTask"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".GroupCreateActivity"
           android:windowSoftInputMode="stateVisible"
-          android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+          android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".groups.ui.pendingmemberinvites.PendingMemberInvitesActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
-              android:theme="@style/TextSecure.LightNoActionBar" />
+              android:theme="@style/TextSecure.LightNoActionBar" >
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".DatabaseMigrationActivity"
               android:theme="@style/NoAnimation.Theme.AppCompat.Light.DarkActionBar"
               android:launchMode="singleTask"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".migrations.ApplicationMigrationActivity"
               android:theme="@style/NoAnimation.Theme.AppCompat.Light.DarkActionBar"
               android:launchMode="singleTask"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
       <activity android:name=".PassphraseCreateActivity"
               android:label="@string/AndroidManifest__create_passphrase"
               android:windowSoftInputMode="stateUnchanged"
               android:theme="@style/TextSecure.LightNoActionBar"
               android:launchMode="singleTask"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+          <meta-data android:name="is_signal_activity" android:value="true"/>
+      </activity>
 
     <activity android:name=".PassphrasePromptActivity"
               android:launchMode="singleTask"
               android:theme="@style/TextSecure.LightIntroTheme"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".NewConversationActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
               android:windowSoftInputMode="stateAlwaysVisible"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".PushContactSelectionActivity"
           android:label="@string/AndroidManifest__select_contacts"
           android:windowSoftInputMode="stateHidden"
-          android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+          android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".giph.ui.GiphyActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
               android:windowSoftInputMode="stateHidden"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".mediasend.MediaSendActivity"
               android:theme="@style/TextSecure.FullScreenMedia"
               android:windowSoftInputMode="stateHidden"
               android:launchMode="singleTop"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".PassphraseChangeActivity"
               android:label="@string/AndroidManifest__change_passphrase"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".VerifyIdentityActivity"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".ApplicationPreferencesActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
@@ -311,46 +379,61 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.NOTIFICATION_PREFERENCES" />
         </intent-filter>
+        <meta-data android:name="is_signal_activity" android:value="true"/>
     </activity>
 
     <activity android:name=".registration.RegistrationNavigationActivity"
               android:launchMode="singleTask"
               android:theme="@style/TextSecure.LightRegistrationTheme"
               android:windowSoftInputMode="stateUnchanged"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".revealable.ViewOnceMessageActivity"
               android:launchMode="singleTask"
               android:theme="@style/TextSecure.FullScreenMedia"
               android:windowSoftInputMode="stateHidden"
               android:excludeFromRecents="true"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".stickers.StickerManagementActivity"
               android:launchMode="singleTask"
               android:theme="@style/TextSecure.LightTheme"
               android:windowSoftInputMode="stateUnchanged"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
      <activity android:name=".DeviceActivity"
                android:label="@string/AndroidManifest__linked_devices"
-               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+         <meta-data android:name="is_signal_activity" android:value="true"/>
+     </activity>
 
     <activity android:name=".logsubmit.SubmitDebugLogActivity"
               android:label="@string/AndroidManifest__log_submit"
               android:windowSoftInputMode="stateHidden"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
         <activity android:name=".MediaPreviewActivity"
               android:label="@string/AndroidManifest__media_preview"
               android:windowSoftInputMode="stateHidden"
               android:launchMode="singleTask"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+            <meta-data android:name="is_signal_activity" android:value="true"/>
+        </activity>
 
     <activity android:name=".mediaoverview.MediaOverviewActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
               android:windowSoftInputMode="stateHidden"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".DummyActivity"
               android:theme="@android:style/Theme.NoDisplay"
@@ -361,11 +444,15 @@
               android:alwaysRetainTaskState="false"
               android:stateNotNeeded="true"
               android:clearTaskOnLaunch="true"
-              android:finishOnTaskLaunch="true" />
+              android:finishOnTaskLaunch="true" >
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".PlayServicesProblemActivity"
               android:theme="@style/TextSecure.DialogActivity"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".SmsSendtoActivity">
         <intent-filter>
@@ -383,6 +470,7 @@
             <category android:name="android.intent.category.DEFAULT" />
             <data android:mimeType="vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.contact" />
         </intent-filter>
+        <meta-data android:name="is_signal_activity" android:value="true"/>
     </activity>
 
     <activity android:name="org.thoughtcrime.securesms.webrtc.VoiceCallShare"
@@ -396,39 +484,53 @@
             <category android:name="android.intent.category.DEFAULT" />
             <data android:mimeType="vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.call" />
         </intent-filter>
-
+        <meta-data android:name="is_signal_activity" android:value="true"/>
     </activity>
 
     <activity android:name=".RecipientPreferenceActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".mediasend.AvatarSelectionActivity"
               android:theme="@style/TextSecure.FullScreenMedia"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".BlockedContactsActivity"
               android:theme="@style/TextSecure.LightTheme"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".scribbles.ImageEditorStickerSelectActivity"
               android:theme="@style/TextSecure.DarkTheme"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".profiles.edit.EditProfileActivity"
             android:theme="@style/TextSecure.LightRegistrationTheme"
             android:windowSoftInputMode="stateVisible"
-            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".lock.v2.CreateKbsPinActivity"
             android:theme="@style/TextSecure.LightRegistrationTheme"
             android:windowSoftInputMode="adjustResize"
-            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".lock.v2.KbsMigrationActivity"
             android:theme="@style/TextSecure.LightRegistrationTheme"
             android:windowSoftInputMode="adjustResize"
-            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".ClearProfileAvatarActivity"
             android:theme="@style/Theme.AppCompat.Dialog.Alert"
@@ -440,44 +542,61 @@
             <action android:name="org.thoughtcrime.securesms.action.CLEAR_PROFILE_PHOTO"/>
             <category android:name="android.intent.category.DEFAULT"/>
         </intent-filter>
+        <meta-data android:name="is_signal_activity" android:value="true"/>
     </activity>
 
     <activity android:name=".messagerequests.MessageRequestMegaphoneActivity"
               android:theme="@style/TextSecure.LightRegistrationTheme"
               android:windowSoftInputMode="adjustResize"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".contactshare.ContactShareEditActivity"
               android:theme="@style/TextSecure.LightTheme"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".contactshare.ContactNameEditActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".contactshare.SharedContactDetailsActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".ShortcutLauncherActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
               android:exported="true"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity
             android:name=".maps.PlacePickerActivity"
             android:label="@string/PlacePickerActivity_title"
             android:theme="@style/TextSecure.LightNoActionBar"
-            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".MainActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
               android:launchMode="singleTask"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" >
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
     <activity android:name=".pin.PinRestoreActivity"
               android:theme="@style/TextSecure.LightNoActionBar"
-              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+              android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" >
+        <meta-data android:name="is_signal_activity" android:value="true"/>
+    </activity>
 
 
         <service android:enabled="true" android:name="org.thoughtcrime.securesms.service.WebRtcCallService"/>
@@ -606,7 +725,7 @@
               android:authorities="org.thoughtcrime.provider.securesms.mms" />
 
     <provider android:name="androidx.core.content.FileProvider"
-              android:authorities="org.thoughtcrime.securesms.fileprovider"
+              android:authorities="${applicationId}.fileprovider"
               android:exported="false"
               android:grantUriPermissions="true">
 
@@ -615,23 +734,23 @@
     </provider>
 
     <provider android:name=".database.DatabaseContentProviders$Conversation"
-              android:authorities="org.thoughtcrime.securesms.database.conversation"
+              android:authorities="${applicationId}.database.conversation"
               android:exported="false" />
 
     <provider android:name=".database.DatabaseContentProviders$ConversationList"
-              android:authorities="org.thoughtcrime.securesms.database.conversationlist"
+              android:authorities="${applicationId}.database.conversationlist"
               android:exported="false" />
 
     <provider android:name=".database.DatabaseContentProviders$Attachment"
-              android:authorities="org.thoughtcrime.securesms.database.attachment"
+              android:authorities="${applicationId}.database.attachment"
               android:exported="false" />
 
     <provider android:name=".database.DatabaseContentProviders$Sticker"
-              android:authorities="org.thoughtcrime.securesms.database.sticker"
+              android:authorities="${applicationId}.database.sticker"
               android:exported="false" />
 
     <provider android:name=".database.DatabaseContentProviders$StickerPack"
-              android:authorities="org.thoughtcrime.securesms.database.stickerpack"
+              android:authorities="${applicationId}.database.stickerpack"
               android:exported="false" />
 
     <receiver android:name=".service.BootReceiver">

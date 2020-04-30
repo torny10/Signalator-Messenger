@@ -5,6 +5,10 @@
     <org.thoughtcrime.securesms.preferences.widgets.ProfilePreference
             android:key="preference_category_profile"/>
 
+    <Preference android:key="preference_category_disguise"
+        android:title="@string/common_setting_disguise_setting"
+        android:icon="?attr/disguise_icon"/>
+
     <Preference android:key="preference_category_sms_mms"
                 android:title="@string/preferences__sms_mms"
                 android:icon="?attr/message_icon"/>

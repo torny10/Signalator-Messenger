@@ -29,6 +29,12 @@ import androidx.lifecycle.ProcessLifecycleOwner;
 import androidx.multidex.MultiDexApplication;
 
 import com.google.android.gms.security.ProviderInstaller;
+import com.prism.commons.utils.LogUtils;
+import com.prism.hider.vault.commons.Vault;
+import com.prism.hider.vault.commons.VaultConfig;
+import com.prism.hider.vault.commons.VaultListener;
+import com.prism.lib.signal.GlobalActivityLifecycleCallbacks;
+import com.prism.lib.vault.signal.VaultVariant;
 
 import org.conscrypt.Conscrypt;
 import org.signal.aesgcmprovider.AesGcmProvider;
@@ -108,6 +114,7 @@ public class ApplicationContext extends MultiDexApplication implements DefaultLi
   public void onCreate() {
     super.onCreate();
     Log.i(TAG, "onCreate()");
+    initializeVault();
     initializeSecurityProvider();
     initializeLogging();
     initializeCrashHandling();
@@ -139,6 +146,36 @@ public class ApplicationContext extends MultiDexApplication implements DefaultLi
     }
 
     ApplicationDependencies.getJobManager().beginJobLoop();
+  }
+
+  private void initializeVault() {
+    Vault vault = VaultVariant.instance();
+    LogUtils.logPid();
+    String processName = com.prism.commons.utils.ProcessUtils.getCurrentProcessName(this);
+    boolean isMainProcess = BuildConfig.APPLICATION_ID.equals(processName);
+    Log.d(TAG, "initializeVault isMain:" + isMainProcess + " process:" + processName);
+    VaultConfig config = new VaultConfig(this, isMainProcess,BuildConfig.APPLICATION_ID);
+    config.setEnableIconDisguise();
+    config.setEnableTaskDesDisguie();
+    config.setVaultListener(new VaultListener() {
+      @Override
+      public void onSetupVaultFinish(Context context) {
+
+      }
+
+      @Override
+      public void onDisableVaultFinish(Context context) {
+
+      }
+
+      @Override
+      public void onVaultUnlocked(Context context) {
+
+      }
+    });
+    config.setEnableVaultOnOtherProcess(true);
+    vault.init(config);
+    registerActivityLifecycleCallbacks(new GlobalActivityLifecycleCallbacks());
   }
 
   @Override

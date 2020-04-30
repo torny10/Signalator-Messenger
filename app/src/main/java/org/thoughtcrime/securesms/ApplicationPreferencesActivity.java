@@ -35,6 +35,7 @@ import org.thoughtcrime.securesms.preferences.AppProtectionPreferenceFragment;
 import org.thoughtcrime.securesms.preferences.AppearancePreferenceFragment;
 import org.thoughtcrime.securesms.preferences.ChatsPreferenceFragment;
 import org.thoughtcrime.securesms.preferences.CorrectedPreferenceFragment;
+import org.thoughtcrime.securesms.preferences.DisguisePreferenceFragment;
 import org.thoughtcrime.securesms.preferences.NotificationsPreferenceFragment;
 import org.thoughtcrime.securesms.preferences.SmsMmsPreferenceFragment;
 import org.thoughtcrime.securesms.preferences.StoragePreferenceFragment;
@@ -60,6 +61,7 @@ public class ApplicationPreferencesActivity extends PassphraseRequiredActionBarA
   private static final String TAG = ApplicationPreferencesActivity.class.getSimpleName();
 
   private static final String PREFERENCE_CATEGORY_PROFILE        = "preference_category_profile";
+  private static final String PREFERENCE_CATEGORY_DISGUISE        = "preference_category_disguise";
   private static final String PREFERENCE_CATEGORY_SMS_MMS        = "preference_category_sms_mms";
   private static final String PREFERENCE_CATEGORY_NOTIFICATIONS  = "preference_category_notifications";
   private static final String PREFERENCE_CATEGORY_APP_PROTECTION = "preference_category_app_protection";
@@ -160,6 +162,8 @@ public class ApplicationPreferencesActivity extends PassphraseRequiredActionBarA
           .setOnPreferenceClickListener(new CategoryClickListener(PREFERENCE_CATEGORY_HELP));
       this.findPreference(PREFERENCE_CATEGORY_ADVANCED)
         .setOnPreferenceClickListener(new CategoryClickListener(PREFERENCE_CATEGORY_ADVANCED));
+      this.findPreference(PREFERENCE_CATEGORY_DISGUISE)
+              .setOnPreferenceClickListener(new CategoryClickListener(PREFERENCE_CATEGORY_DISGUISE));
 
       tintIcons();
     }
@@ -198,6 +202,8 @@ public class ApplicationPreferencesActivity extends PassphraseRequiredActionBarA
           .setSummary(AppearancePreferenceFragment.getSummary(getActivity()));
       this.findPreference(PREFERENCE_CATEGORY_CHATS)
           .setSummary(ChatsPreferenceFragment.getSummary(getActivity()));
+      this.findPreference(PREFERENCE_CATEGORY_DISGUISE)
+              .setSummary(DisguisePreferenceFragment.getSummary(getActivity()));
     }
 
     private void setCategoryVisibility() {
@@ -244,9 +250,12 @@ public class ApplicationPreferencesActivity extends PassphraseRequiredActionBarA
         case PREFERENCE_CATEGORY_ADVANCED:
           fragment = new AdvancedPreferenceFragment();
           break;
-        case PREFERENCE_CATEGORY_HELP:
-          fragment = new HelpFragment();
-          break;
+          case PREFERENCE_CATEGORY_HELP:
+            fragment = new HelpFragment();
+            break;
+          case PREFERENCE_CATEGORY_DISGUISE:
+            fragment = new DisguisePreferenceFragment();
+            break;
         default:
           throw new AssertionError();
         }

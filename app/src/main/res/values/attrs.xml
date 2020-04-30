@@ -197,6 +197,7 @@
     <attr name="notifications_icon" format="reference" />
     <attr name="privacy_icon" format="reference" />
     <attr name="appearance_icon" format="reference" />
+    <attr name="disguise_icon" format="reference" />
     <attr name="chats_and_media_icon" format="reference" />
     <attr name="data_and_storage_icon" format="reference" />
     <attr name="linked_devices_icon" format="reference" />

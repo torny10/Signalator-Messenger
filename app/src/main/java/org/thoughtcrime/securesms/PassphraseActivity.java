@@ -21,6 +21,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
+
+import com.prism.lib.signal.VaultIntent;
+
 import org.thoughtcrime.securesms.logging.Log;
 
 import org.thoughtcrime.securesms.crypto.MasterSecret;
@@ -60,6 +63,7 @@ public abstract class PassphraseActivity extends BaseActionBarActivity {
         cleanup();
 
         Intent nextIntent = getIntent().getParcelableExtra("next_intent");
+        nextIntent = VaultIntent.vaultIntentIfNeeded(PassphraseActivity.this, nextIntent);
         if (nextIntent != null) {
             try {
                 startActivity(nextIntent);

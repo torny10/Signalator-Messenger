@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="pref_enable_disguise_mode"
+        android:summary="@string/common_setting_desc_disguise_mode"
+        android:title="@string/common_setting_disguise_mode" />
+
+
+    <Preference
+        android:key="pref_reset_pin"
+        android:summary="@string/common_setting_reset_pin"
+        android:title="@string/common_setting_reset_pin" />
+
+    <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="pref_use_fingerprint"
+        android:summary="@string/common_setting_use_fingerprint"
+        android:title="@string/common_setting_use_fingerprint" />
+
+
+    <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="pref_allow_screen_capture"
+        android:summary="@string/common_setting_desc_allow_screen_capture"
+        android:title="@string/common_setting_allow_screen_capture" />
+
+    <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="pref_hide_from_recent"
+        android:summary="@string/common_setting_desc_hide_from_recent"
+        android:title="@string/common_setting_hide_from_recent" />
+
+
+
+</PreferenceScreen>

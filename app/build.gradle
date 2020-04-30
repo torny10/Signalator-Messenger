@@ -101,6 +101,10 @@ android {
     }
 
     defaultConfig {
+
+        applicationId 'com.prism.hider.signal'
+
+        resValue 'string', 'package_name', applicationId
         versionCode canonicalVersionCode * postFixSize
         versionName canonicalVersionName
 
@@ -193,7 +197,7 @@ android {
             initWith debug
 
             buildConfigField "String", "SIGNAL_URL", "\"https://textsecure-service-staging.whispersystems.org\""
-            buildConfigField "String", "STORAGE_URL", "\"https://storage-staging.signal.org\""
+            buildConfigField "String", "STORAGE3_URL", "\"https://storage-staging.signal.org\""
             buildConfigField "String", "SIGNAL_CDN_URL", "\"https://cdn-staging.signal.org\""
             buildConfigField "String", "SIGNAL_CDN2_URL", "\"https://cdn2-staging.signal.org\""
             buildConfigField "String", "SIGNAL_CONTACT_DISCOVERY_URL", "\"https://api-staging.directory.signal.org\""
@@ -255,6 +259,25 @@ android {
 }
 
 dependencies {
+
+
+//    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation 'com.android.support:support-annotations:28.0.0'
+//    implementation 'com.android.support:cardview-v7:28.0.0'
+//    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+//            {
+//        exclude group: 'com.android.support', module: 'appcompat-v7'
+//        exclude group: 'com.android.support', module: 'cardview-v7'
+//        exclude group: 'com.android.support', module: 'recyclerview-v7'
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//
+//    }
+
+    implementation 'com.google.dagger:dagger:2.16'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.16'
+
     implementation 'androidx.appcompat:appcompat:1.1.0-beta01'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'

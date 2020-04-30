@@ -363,6 +363,7 @@
         <item name="notifications_icon">@drawable/ic_bell_outline_24</item>
         <item name="privacy_icon">@drawable/ic_lock_outline_24</item>
         <item name="appearance_icon">@drawable/ic_appearance_outline_24</item>
+        <item name="disguise_icon">@drawable/ic_visibility_off_outline</item>
         <item name="chats_and_media_icon">@drawable/ic_photo_outline_24</item>
         <item name="data_and_storage_icon">@drawable/ic_archive_outline_24dp</item>
         <item name="linked_devices_icon">@drawable/ic_linked_devices_24</item>
@@ -641,6 +642,7 @@
         <item name="notifications_icon">@drawable/ic_bell_solid_24</item>
         <item name="privacy_icon">@drawable/ic_lock_solid_24</item>
         <item name="appearance_icon">@drawable/ic_appearance_solid_24</item>
+        <item name="disguise_icon">@drawable/ic_visibility_off_solid</item>
         <item name="chats_and_media_icon">@drawable/ic_photo_solid_24</item>
         <item name="data_and_storage_icon">@drawable/ic_archive_solid_24dp</item>
         <item name="linked_devices_icon">@drawable/ic_linked_devices_24</item>
