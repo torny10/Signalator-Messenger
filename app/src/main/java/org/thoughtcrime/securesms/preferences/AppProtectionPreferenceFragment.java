@@ -81,6 +81,20 @@ public class AppProtectionPreferenceFragment extends CorrectedPreferenceFragment
     disablePassphrase.setOnPreferenceChangeListener(new DisablePassphraseClickListener());
 
     initializeVisibility();
+    initializeMask();
+  }
+
+
+  private void initializeMask() {
+    // @ldp mark settings about pin and screen security invisible
+    String[] maskKeys = new String[] {
+            "pref_android_screen_lock",
+            "pref_android_screen_lock_timeout",
+            "pref_screen_security",
+            "prefs_signal_pin"
+    }  ;
+    for (String key : maskKeys)
+      findPreference(key).setVisible(false);
   }
 
   @Override
