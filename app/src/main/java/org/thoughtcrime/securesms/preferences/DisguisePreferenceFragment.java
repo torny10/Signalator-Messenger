@@ -3,7 +3,6 @@ package org.thoughtcrime.securesms.preferences;
 import android.content.Context;
 import android.os.Bundle;
 
-import androidx.fragment.app.FragmentActivity;
 import androidx.preference.Preference;
 
 import com.prism.commons.utils.RecentUtils;
@@ -24,7 +23,7 @@ public class DisguisePreferenceFragment extends CorrectedPreferenceFragment {
     private static final String PREF_DISGUISE_MODE = "pref_enable_disguise_mode";
     private static final String PREF_RESET_PIN = "pref_reset_pin";
     private static final String PREF_USE_FINGERPRINT = "pref_use_fingerprint";
-    private static final String PREF_ALLOW_SCREEN_CAPTURE = "pref_allow_screen_capture";
+    private static final String PREF_SCREEN_SECURITY = "pref_screen_security";
     private static final String PREF_HIDE_FROM_RECENT = "pref_hide_from_recent";
 
     public static CharSequence getSummary(Context context) {
@@ -88,14 +87,11 @@ public class DisguisePreferenceFragment extends CorrectedPreferenceFragment {
 
     }
 
-    private void initializeAllowScreenCapture() {
-        SwitchPreferenceCompat allowScreenCapturePref = (SwitchPreferenceCompat) findPreference(PREF_ALLOW_SCREEN_CAPTURE);
-        boolean allow = SignalPreference.allowScreenCapture.get(getContext()).read();
-        allowScreenCapturePref.setChecked(allow);
-        allowScreenCapturePref.setOnPreferenceChangeListener((preference, newValue) -> {
+    private void initializeScreenSecurity() {
+        SwitchPreferenceCompat screenSecurityPref = (SwitchPreferenceCompat) findPreference(PREF_SCREEN_SECURITY);
+        screenSecurityPref.setOnPreferenceChangeListener((preference, newValue) -> {
             boolean checked = (Boolean) newValue;
-            SignalPreference.allowScreenCapture.get(getContext()).save(checked);
-            ScreenSecurityUtils.setScreenCaptureAllowed(getActivity(), checked);
+            ScreenSecurityUtils.setScreenCaptureAllowed(getActivity(), !checked);
             return true;
         });
     }
@@ -116,7 +112,7 @@ public class DisguisePreferenceFragment extends CorrectedPreferenceFragment {
     public void onResume() {
         super.onResume();
         initializeVaultPrefs();
-        initializeAllowScreenCapture();
+        initializeScreenSecurity();
         initializeHideFromRecent();
         ((ApplicationPreferencesActivity) getActivity()).getSupportActionBar()
                 .setTitle(R.string.common_setting_disguise_setting);

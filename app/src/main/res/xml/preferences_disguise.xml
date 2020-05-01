@@ -20,14 +20,20 @@
         android:title="@string/common_setting_use_fingerprint" />
 
 
-    <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:key="pref_allow_screen_capture"
-        android:summary="@string/common_setting_desc_allow_screen_capture"
-        android:title="@string/common_setting_allow_screen_capture" />
+<!--    <org.thoughtcrime.securesms.components.SwitchPreferenceCompat-->
+<!--        android:defaultValue="true"-->
+<!--        android:key="pref_allow_screen_capture"-->
+<!--        android:summary="@string/common_setting_desc_allow_screen_capture"-->
+<!--        android:title="@string/common_setting_allow_screen_capture" />-->
 
     <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
-        android:defaultValue="true"
+        android:defaultValue="false"
+        android:key="pref_screen_security"
+        android:summary="@string/preferences__disable_screen_security_to_allow_screen_shots"
+        android:title="@string/preferences__screen_security" />
+
+    <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
+        android:defaultValue="false"
         android:key="pref_hide_from_recent"
         android:summary="@string/common_setting_desc_hide_from_recent"
         android:title="@string/common_setting_hide_from_recent" />

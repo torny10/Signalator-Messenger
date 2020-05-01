@@ -174,12 +174,14 @@ public abstract class PassphraseRequiredActionBarActivity extends BaseActionBarA
       return STATE_UI_BLOCKING_UPGRADE;
     } else if (!TextSecurePreferences.hasPromptedPushRegistration(this)) {
       return STATE_WELCOME_PUSH_SCREEN;
-    } else if (SignalStore.storageServiceValues().needsAccountRestore()) {
-      return STATE_ENTER_SIGNAL_PIN;
+      // @ldp ignore PIN
+//    } else if (SignalStore.storageServiceValues().needsAccountRestore()) {
+//      return STATE_ENTER_SIGNAL_PIN;
     } else if (userMustSetProfileName()) {
       return STATE_CREATE_PROFILE_NAME;
-    } else if (userMustCreateSignalPin()) {
-      return STATE_CREATE_SIGNAL_PIN;
+      // @ldp ignore PIN
+//    } else if (userMustCreateSignalPin()) {
+//      return STATE_CREATE_SIGNAL_PIN;
     } else {
       return STATE_NORMAL;
     }

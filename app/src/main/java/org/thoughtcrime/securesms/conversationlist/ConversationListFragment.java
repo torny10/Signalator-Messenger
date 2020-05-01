@@ -506,7 +506,8 @@ public class ConversationListFragment extends MainFragment implements LoaderMana
   }
 
   private void onMegaphoneChanged(@Nullable Megaphone megaphone) {
-    if (megaphone == null) {
+    // @ldp filter out PINS_FOR_ALL megaphone
+    if (megaphone == null || Megaphones.Event.PINS_FOR_ALL.equals(megaphone.getEvent())) {
       megaphoneContainer.setVisibility(View.GONE);
       megaphoneContainer.removeAllViews();
       return;

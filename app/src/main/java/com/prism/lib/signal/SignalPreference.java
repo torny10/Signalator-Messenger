@@ -18,10 +18,10 @@ public class SignalPreference {
 
 
 
-    private static final String ALLOW_SCREEN_CAPTURE = "ALLOW_SCREEN_CAPTURE";
-    public static PreferenceModelHolder<Boolean> allowScreenCapture = new PreferenceModelHolder<>(
-            wrapperHolder.get(null), ALLOW_SCREEN_CAPTURE, true,
-            Boolean.class);
+//    private static final String ALLOW_SCREEN_CAPTURE = "ALLOW_SCREEN_CAPTURE";
+//    public static PreferenceModelHolder<Boolean> allowScreenCapture = new PreferenceModelHolder<>(
+//            wrapperHolder.get(null), ALLOW_SCREEN_CAPTURE, true,
+//            Boolean.class);
 
     private static final String HIDE_FROM_RECENT = "HIDE_FROM_RECENT";
     public static PreferenceModelHolder<Boolean> hideFromRecent = new PreferenceModelHolder<>(

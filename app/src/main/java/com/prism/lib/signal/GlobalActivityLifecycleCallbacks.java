@@ -5,15 +5,12 @@ import android.app.Application;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.WindowManager;
 
 import com.prism.commons.utils.RecentUtils;
-import com.prism.commons.utils.ScreenSecurityUtils;
 import com.prism.commons.utils.Tag;
 import com.prism.hider.vault.commons.Vault;
 import com.prism.lib.vault.signal.VaultVariant;
 
-import org.thoughtcrime.securesms.ApplicationContext;
 import org.thoughtcrime.securesms.logging.Log;
 
 public class GlobalActivityLifecycleCallbacks implements Application.ActivityLifecycleCallbacks {
@@ -26,8 +23,8 @@ public class GlobalActivityLifecycleCallbacks implements Application.ActivityLif
     public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
         if (firstTime) {
             firstTime = false;
-            if (!VaultVariant.instance().isSetup(activity))
-                VaultVariant.instance().setupVault(activity, false);
+//            if (!VaultVariant.instance().isSetup(activity))
+//                VaultVariant.instance().setupVault(activity, false);
             RecentUtils.setHideFromRecentEnable(activity, SignalPreference.hideFromRecent.get(activity).read());
         }
     }
@@ -41,8 +38,8 @@ public class GlobalActivityLifecycleCallbacks implements Application.ActivityLif
     public void onActivityResumed(Activity activity) {
 
 
-        Log.d(TAG, "screencapture allowed:" + SignalPreference.allowScreenCapture.get(activity).read());
-        ScreenSecurityUtils.setScreenCaptureAllowed(activity, SignalPreference.allowScreenCapture.get(activity).read());
+//        Log.d(TAG, "screencapture allowed:" + SignalPreference.allowScreenCapture.get(activity).read());
+//        ScreenSecurityUtils.setScreenCaptureAllowed(activity, SignalPreference.allowScreenCapture.get(activity).read());
         Vault vault = VaultVariant.instance();
         if (vault.isSetup(activity)) {
             PackageManager pm = activity.getPackageManager();
