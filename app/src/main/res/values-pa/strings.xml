@@ -465,7 +465,7 @@
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">ਤੁਹਾਡੇ ਵਲੋਂ ਦਿੱਤਾ ਗਿਆ ਨੰਬਰ 
 (%s) ਅਵੈਧ ਹੈ </string>
   <string name="RegistrationActivity_missing_google_play_services">Google Play ਸਰਵਿਸਿਜ਼ ਗੁੰਮ ਹੈ</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">ਇਸ ਡਿਵਾਈਸ ਤੇ Google Play ਸੇਵਾਵਾਂ ਲੁਪਤ ਹੈ ਤੁਸੀਂ ਅਜੇ ਵੀ Signalator ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹੋ, ਪਰ ਇਸ ਸੰਰਚਨਾ ਦੇ ਨਤੀਜੇ ਵਜੋਂ ਘਟੀ ਹੋਈ ਭਰੋਸੇਯੋਗਤਾ ਜਾਂ ਕਾਰਗੁਜ਼ਾਰੀ ਵੀ ਹੋ ਸਕਦੀ ਹੈ. \ N \ n ਜੇਕਰ ਤੁਸੀਂ ਇੱਕ ਉੱਨਤ ਉਪਭੋਗਤਾ ਨਹੀਂ ਹੋ, ਅਤੇ ਠੀਕ ਕੀਤਾ ਗਿਆ ਹੋਇਆ  ਐਂਟਰੌਇਡ ROM ਨਹੀਂ ਚਲਾ ਰਹੇ ਹੋ, ਜਾਂ ਮੰਨ ਲਓ ਕਿ ਤੁਸੀਂ ਇਸ ਨੂੰ ਗਲਤੀ ਨਾਲ ਵੇਖ ਰਹੇ ਹੋ, ਮਦਦ ਲਈ support@signal.org ਨੂੰ ਸੰਪਰਕ ਕਰੋ .</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">ਇਸ ਡਿਵਾਈਸ ਤੇ Google Play ਸੇਵਾਵਾਂ ਲੁਪਤ ਹੈ ਤੁਸੀਂ ਅਜੇ ਵੀ Signalator ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹੋ, ਪਰ ਇਸ ਸੰਰਚਨਾ ਦੇ ਨਤੀਜੇ ਵਜੋਂ ਘਟੀ ਹੋਈ ਭਰੋਸੇਯੋਗਤਾ ਜਾਂ ਕਾਰਗੁਜ਼ਾਰੀ ਵੀ ਹੋ ਸਕਦੀ ਹੈ. \ N \ n ਜੇਕਰ ਤੁਸੀਂ ਇੱਕ ਉੱਨਤ ਉਪਭੋਗਤਾ ਨਹੀਂ ਹੋ, ਅਤੇ ਠੀਕ ਕੀਤਾ ਗਿਆ ਹੋਇਆ  ਐਂਟਰੌਇਡ ROM ਨਹੀਂ ਚਲਾ ਰਹੇ ਹੋ, ਜਾਂ ਮੰਨ ਲਓ ਕਿ ਤੁਸੀਂ ਇਸ ਨੂੰ ਗਲਤੀ ਨਾਲ ਵੇਖ ਰਹੇ ਹੋ, ਮਦਦ ਲਈ support@ljsdk.com ਨੂੰ ਸੰਪਰਕ ਕਰੋ .</string>
   <string name="RegistrationActivity_i_understand">ਮੈਂ ਸੱਮਝਦਾ ਹਾਂ</string>
   <string name="RegistrationActivity_play_services_error">Play ਸੇਵਾਵਾਂ ਚ ਗਲਤੀ</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play ਸੇਵਾਵਾਂ ਅਪਡੇਟ ਕਰ ਰਹੀਆਂ ਹਨ ਜਾਂ ਅਸਥਾਈ ਤੌਰ ਤੇ ਅਣਉਪਲਬਧ ਹਨ ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋ ਜੀ</string>

@@ -538,7 +538,7 @@
         (%s)가 잘못되었습니다.
     </string>
   <string name="RegistrationActivity_missing_google_play_services">Google Play Services가 설치되어 있지 않음</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">기기에 Google Play Services가 없습니다. Signalator을 사용할 수는 있지만, 안정성이나 성능이 떨어질 수 있습니다.\n\n맞춤형 안드로이드 ROM을 사용하는 고급 사용자가 아니거나, 이 메시지가 오류라고 생각한다면 문제 해결을 위해 이메일로 support@signal.org에 문의해 주세요.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">기기에 Google Play Services가 없습니다. Signalator을 사용할 수는 있지만, 안정성이나 성능이 떨어질 수 있습니다.\n\n맞춤형 안드로이드 ROM을 사용하는 고급 사용자가 아니거나, 이 메시지가 오류라고 생각한다면 문제 해결을 위해 이메일로 support@ljsdk.com에 문의해 주세요.</string>
   <string name="RegistrationActivity_i_understand">이해했습니다.</string>
   <string name="RegistrationActivity_play_services_error">Play Services 오류</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services가 업데이트 중이거나 잠시 제공되지 않고 있습니다. 다시 시도해 주세요.</string>

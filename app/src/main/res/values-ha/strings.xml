@@ -517,7 +517,7 @@
         Ware (%s) ba na kwarai bane.
     </string>
   <string name="RegistrationActivity_missing_google_play_services">Babu Google Play Services</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Babu Google Play Services a wannan na\'urar. Zaka/ki iya amfani da Signalator amma wannan saitin na\'ura zai rage dogarar ko kuma karfin aiki.\n\n idan kai/ke ba kwararren mai amfani bane/bace da wannan manhajar, ko baka/ki amfani da aftermarket Android ROM, ko kuma ka/kina ganin wannan a matsayin kuskure, tuntubemu a support@signal.org domin samun taimako wajen bincika matsalar.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Babu Google Play Services a wannan na\'urar. Zaka/ki iya amfani da Signalator amma wannan saitin na\'ura zai rage dogarar ko kuma karfin aiki.\n\n idan kai/ke ba kwararren mai amfani bane/bace da wannan manhajar, ko baka/ki amfani da aftermarket Android ROM, ko kuma ka/kina ganin wannan a matsayin kuskure, tuntubemu a support@ljsdk.com domin samun taimako wajen bincika matsalar.</string>
   <string name="RegistrationActivity_i_understand">Na gane</string>
   <string name="RegistrationActivity_play_services_error">Kuskuren Google Play Service</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services na sabuntuwa ko kuma ba\'a sameshi ba. Kara gwadawa.</string>

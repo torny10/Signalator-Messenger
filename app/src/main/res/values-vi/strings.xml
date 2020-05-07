@@ -535,7 +535,7 @@ mã quốc gia bạn</string>
   <string name="RegistrationActivity_invalid_number">Số không hợp lệ</string>
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">Số bạn cung cấp (%s) không hợp lệ.</string>
   <string name="RegistrationActivity_missing_google_play_services">Thiếu Dịch vụ Google Play</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Thiết bị này thiếu Dịch vụ Google Play. Bạn vẫn có thể dùng Signalator, nhưng thiết đặt này có thể giảm độ tin cậy và hiệu năng ứng dụng.\n\nNếu bạn không phải người dùng nâng cao, hoặc không dùng ROM Android tự chế, hoặc cho rằng đây là lỗi không đáng có, hãy liên lạc support@signal.org để nhờ hỗ trợ.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Thiết bị này thiếu Dịch vụ Google Play. Bạn vẫn có thể dùng Signalator, nhưng thiết đặt này có thể giảm độ tin cậy và hiệu năng ứng dụng.\n\nNếu bạn không phải người dùng nâng cao, hoặc không dùng ROM Android tự chế, hoặc cho rằng đây là lỗi không đáng có, hãy liên lạc support@ljsdk.com để nhờ hỗ trợ.</string>
   <string name="RegistrationActivity_i_understand">Tôi đã hiểu</string>
   <string name="RegistrationActivity_play_services_error">Lỗi Dịch vụ Google Play</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Dịch vụ Google Play đang cập nhật hoặc tạm thời không khả dụng. Hãy thử lại sau.</string>

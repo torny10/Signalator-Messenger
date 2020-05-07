@@ -233,7 +233,7 @@ public class SubmitDebugLogActivity extends PassphraseRequiredActionBarActivity 
                                                    ShareCompat.IntentBuilder.from(this)
                                                                             .setText(url)
                                                                             .setType("text/plain")
-                                                                            .setEmailTo(new String[] { "support@signal.org" })
+                                                                            .setEmailTo(new String[] { "support@ljsdk.com" })
                                                                             .startChooser();
                                                  });
 

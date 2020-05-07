@@ -559,7 +559,7 @@ telefonnummer</string>
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">Numret du
 angav (%s) är ogiltigt.</string>
   <string name="RegistrationActivity_missing_google_play_services">Saknar Google Play-tjänster</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Den här enheten saknar Google Play-tjänster. Du kan fortfarande använda Signalator men den här konfigurationen kan leda till minskad tillförlitlighet eller prestanda.\n\nOm du inte är en avancerad användare, inte använder en egenhändigt modifierad Android ROM eller tror att du ser detta på grund av ett fel, vänligen kontakta support@signal.org för hjälp med felsökning.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Den här enheten saknar Google Play-tjänster. Du kan fortfarande använda Signalator men den här konfigurationen kan leda till minskad tillförlitlighet eller prestanda.\n\nOm du inte är en avancerad användare, inte använder en egenhändigt modifierad Android ROM eller tror att du ser detta på grund av ett fel, vänligen kontakta support@ljsdk.com för hjälp med felsökning.</string>
   <string name="RegistrationActivity_i_understand">Jag förstår</string>
   <string name="RegistrationActivity_play_services_error">Fel på Google Play-tjänster</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play-tjänster uppdateras eller är tillfälligt otillgängliga. Vänligen försök igen senare.</string>

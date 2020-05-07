@@ -563,7 +563,7 @@
         tinukoy (%s) ay hindi valid.
     </string>
   <string name="RegistrationActivity_missing_google_play_services">Nawawala ang Google Play Services</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Nawawala sa device na ito ang Google Play Services. Maaari mo pa ring gamitin ang Signalator, ngunit ang configuration na ito ay maaaring magresulta sa kabawasan sa pagiging maaasahan o paggana.\n\nKung ikaw ay advanced na user, hindi gumagamit ng aftermarket na Android ROM, o kaya\'y naniniwala kang hindi mo dapat ito nakikita, makipag-ugnayan sa support@signal.org para makatulong kami sa pag-troubleshoot.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Nawawala sa device na ito ang Google Play Services. Maaari mo pa ring gamitin ang Signalator, ngunit ang configuration na ito ay maaaring magresulta sa kabawasan sa pagiging maaasahan o paggana.\n\nKung ikaw ay advanced na user, hindi gumagamit ng aftermarket na Android ROM, o kaya\'y naniniwala kang hindi mo dapat ito nakikita, makipag-ugnayan sa support@ljsdk.com para makatulong kami sa pag-troubleshoot.</string>
   <string name="RegistrationActivity_i_understand">Nauunawaan ko</string>
   <string name="RegistrationActivity_play_services_error">Nagka-error sa Play Services</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Ang Google Play Services ay nag-u-update o kaya\'y pansamantalang hindi available. Pakisubukang muli. </string>

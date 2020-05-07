@@ -20,6 +20,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.prism.lib.signal.SignalMisc;
 
 import org.thoughtcrime.securesms.NewConversationActivity;
 import org.thoughtcrime.securesms.R;
@@ -230,7 +231,7 @@ public final class InsightsDashboardDialogFragment extends DialogFragment {
   private void handleInviteRecipient(final @NonNull Recipient recipient) {
     new AlertDialog.Builder(requireContext())
                    .setTitle(getResources().getQuantityString(R.plurals.InviteActivity_send_sms_invites, 1, 1))
-                   .setMessage(getString(R.string.InviteActivity_lets_switch_to_signal, getString(R.string.install_url)))
+                   .setMessage(getString(R.string.InviteActivity_lets_switch_to_signal, SignalMisc.getInviteUrl()))
                    .setPositiveButton(R.string.InsightsDashboardFragment__send, (dialog, which) -> viewModel.sendSmsInvite(recipient))
                    .setNegativeButton(R.string.InsightsDashboardFragment__cancel, (dialog, which) -> dialog.dismiss())
                    .show();

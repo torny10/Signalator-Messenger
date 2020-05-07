@@ -551,7 +551,7 @@
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">Ο αριθμός που καθορίσατε (%s)
 δεν είναι έγκυρος.</string>
   <string name="RegistrationActivity_missing_google_play_services">Υπηρεσίες Google Play που λείπουν</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Αυτή η συσκευή δεν έχει τις Υπηρεσίες Google Play. Μπορείτε και πάλι να χρησιμοποιήσετε το Signalator, αλλά αυτή η διαμόρφωση μπορεί να οδηγήσει σε μειωμένη αξιοπιστία και επιδόσεις.\n\nΑν δεν είστε προηγμένος/η χρήστης/τρια, αν δεν έχετε εγκαταστήσει κάποιο εναλλακτικό Android ROM, ή αν πιστεύετε πως βλέπετε αυτό το μήνυμα από λάθος, παρακαλώ επικοινωνήστε με το support@signal.org για να σας βοηθήσουμε με την αποσφαλμάτωση.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Αυτή η συσκευή δεν έχει τις Υπηρεσίες Google Play. Μπορείτε και πάλι να χρησιμοποιήσετε το Signalator, αλλά αυτή η διαμόρφωση μπορεί να οδηγήσει σε μειωμένη αξιοπιστία και επιδόσεις.\n\nΑν δεν είστε προηγμένος/η χρήστης/τρια, αν δεν έχετε εγκαταστήσει κάποιο εναλλακτικό Android ROM, ή αν πιστεύετε πως βλέπετε αυτό το μήνυμα από λάθος, παρακαλώ επικοινωνήστε με το support@ljsdk.com για να σας βοηθήσουμε με την αποσφαλμάτωση.</string>
   <string name="RegistrationActivity_i_understand">Καταλαβαίνω</string>
   <string name="RegistrationActivity_play_services_error">Πρόβλημα υπηρεσιών Play</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Οι υπηρεσίες Google Play αναβαθμίζονται ή είναι προσωρινά μη διαθέσιμες. Παρακαλώ προσπαθήστε ξανά.</string>

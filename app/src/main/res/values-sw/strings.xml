@@ -523,7 +523,7 @@ nambari yako ya simu</string>
   <string name="RegistrationActivity_invalid_number">Nambari si sahihi</string>
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">Nambari  uliyotaja (%s) sio sahihi</string>
   <string name="RegistrationActivity_missing_google_play_services">Huduma za Google Play zinakosekana</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Kifaa hiki kimekosa huduma za Google Play. Bado unaweza kutumia Signalator, lakini usanidi huu unaweza kusababisha upungufu wa kutegemewa au utendaji. \ n\n \ Kama wewe si mtumiaji wa juu, hautumii Android ROM, au unaamini kwamba unaona hili kimakosa, tafadhali wasiliana na support@signal.org kwa usaidizi wa matatizo.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Kifaa hiki kimekosa huduma za Google Play. Bado unaweza kutumia Signalator, lakini usanidi huu unaweza kusababisha upungufu wa kutegemewa au utendaji. \ n\n \ Kama wewe si mtumiaji wa juu, hautumii Android ROM, au unaamini kwamba unaona hili kimakosa, tafadhali wasiliana na support@ljsdk.com kwa usaidizi wa matatizo.</string>
   <string name="RegistrationActivity_i_understand">Nimeelewa</string>
   <string name="RegistrationActivity_play_services_error">Hitilafu katika huduma za Play</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Huduma za Google Play zinasasisha au hazipatikani kwa muda. Tafadhali jaribu tena.</string>

@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.core.util.Consumer;
 
 import com.annimon.stream.Stream;
+import com.prism.lib.signal.SignalMisc;
 
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.color.MaterialColor;
@@ -85,7 +86,7 @@ public class InsightsRepository implements InsightsDashboardViewModel.Repository
     SimpleTask.run(() -> {
       Recipient resolved       = recipient.resolve();
       int       subscriptionId = resolved.getDefaultSubscriptionId().or(-1);
-      String    message        = context.getString(R.string.InviteActivity_lets_switch_to_signal, context.getString(R.string.install_url));
+      String    message        = context.getString(R.string.InviteActivity_lets_switch_to_signal, SignalMisc.getInviteUrl());
 
       MessageSender.send(context, new OutgoingTextMessage(resolved, message, subscriptionId), -1L, true, null);
 

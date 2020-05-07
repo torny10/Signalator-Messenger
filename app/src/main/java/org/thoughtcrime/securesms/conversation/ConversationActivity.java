@@ -74,6 +74,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.annimon.stream.Stream;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
+import com.prism.lib.signal.SignalMisc;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -1006,7 +1007,7 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
   }
 
   private void handleInviteLink() {
-    String inviteText = getString(R.string.ConversationActivity_lets_switch_to_signal, getString(R.string.install_url));
+    String inviteText = getString(R.string.ConversationActivity_lets_switch_to_signal, SignalMisc.getInviteUrl());
 
     if (isDefaultSms) {
       composeText.appendInvite(inviteText);

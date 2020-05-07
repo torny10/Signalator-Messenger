@@ -563,7 +563,7 @@
 (%s) non è valido.
 </string>
   <string name="RegistrationActivity_missing_google_play_services">Google Play Services mancanti</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Il dispositivo non ha Google Play Services. Puoi comunque usare Signalator, ma questa configurazione potrebbe essere meno affidabile o performante.\n\nSe non sei un utente avanzato, non usi una ROM Android alternativa o credi che questo messaggio sia un errore, contatta support@signal.org per ricevere aiuto.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Il dispositivo non ha Google Play Services. Puoi comunque usare Signalator, ma questa configurazione potrebbe essere meno affidabile o performante.\n\nSe non sei un utente avanzato, non usi una ROM Android alternativa o credi che questo messaggio sia un errore, contatta support@ljsdk.com per ricevere aiuto.</string>
   <string name="RegistrationActivity_i_understand">Ho capito</string>
   <string name="RegistrationActivity_play_services_error">Errore di Google Play Services</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services si sta aggiornando o non è al momento disponibile. Per favore riprovare.</string>

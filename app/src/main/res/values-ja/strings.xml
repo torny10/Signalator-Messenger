@@ -527,7 +527,7 @@
   <string name="RegistrationActivity_invalid_number">無効な番号</string>
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">指定された番号 (%s) は無効です。</string>
   <string name="RegistrationActivity_missing_google_play_services">Google Play Services がありません</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">このデバイスには Google Play Services がありません。Signalator は使用できますが、信頼性や性能は下がる可能性があります。\n\n上級ユーザーでない方や、アフターマーケットで購入された Android の ROM をご利用の方、またはこれが間違って表示されていると思われる方は support@signal.org にお問い合わせください。</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">このデバイスには Google Play Services がありません。Signalator は使用できますが、信頼性や性能は下がる可能性があります。\n\n上級ユーザーでない方や、アフターマーケットで購入された Android の ROM をご利用の方、またはこれが間違って表示されていると思われる方は support@ljsdk.com にお問い合わせください。</string>
   <string name="RegistrationActivity_i_understand">分かりました</string>
   <string name="RegistrationActivity_play_services_error">Play Services のエラー</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services は更新中であるか、一時的に使用できません。もう一度お試しください。</string>

@@ -523,7 +523,7 @@
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">تہاڈا دسیا نمبر (%s) ناقابل قبول اے۔
     </string>
   <string name="RegistrationActivity_missing_google_play_services"> گوگل پلے سروسز موجود نئیں</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">ایس آلے تے گوگل پلے سروسز موجود نئیں۔ تسیں فیر وی Signalatorاستعمال کر سکدے او، پر ایس وضع دا نتیجہ گھٹ اعتماد یاں کارکردگی دی صورت اچ ہو سکدا اے\n\n تسیں اک اعلی درجے دے صارف نئیں او، اک بعد از مارکیٹ اینڈرائیڈ روم نئیں چلا رے او، یاں تہانوں یقین اے کہ اے سنیہا تہانوں نقص دی وجہ توں نظر آ رئیا اے، تے فیر مہربانی کر کے مسئلہ حل کرن اچ مدد لئی support@signal.org نال رابطہ کرو۔</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">ایس آلے تے گوگل پلے سروسز موجود نئیں۔ تسیں فیر وی Signalatorاستعمال کر سکدے او، پر ایس وضع دا نتیجہ گھٹ اعتماد یاں کارکردگی دی صورت اچ ہو سکدا اے\n\n تسیں اک اعلی درجے دے صارف نئیں او، اک بعد از مارکیٹ اینڈرائیڈ روم نئیں چلا رے او، یاں تہانوں یقین اے کہ اے سنیہا تہانوں نقص دی وجہ توں نظر آ رئیا اے، تے فیر مہربانی کر کے مسئلہ حل کرن اچ مدد لئی support@ljsdk.com نال رابطہ کرو۔</string>
   <string name="RegistrationActivity_i_understand">میں سمجھ گیا آں</string>
   <string name="RegistrationActivity_play_services_error">پلے سروسز اچ نقص</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">گوگل پلے سروسز اپ ڈیٹ ہو رئی اے یاں عارضی طور تے دستیاب نئی۔ مہربانی کرکے فیر کوشش کرو۔</string>

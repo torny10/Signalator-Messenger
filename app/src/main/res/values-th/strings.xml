@@ -539,7 +539,7 @@
         ระบุ (%s) ไม่ถูกต้อง
     </string>
   <string name="RegistrationActivity_missing_google_play_services">ไม่พบ Google Play Services</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">อุปกรณ์นี้ไม่มี Google Play Services คุณยังสามารถใช้งาน Signalator ได้ แต่การตั้งค่าจะได้เสถียรภาพหรือประสิทธิภาพที่ลดลง\n\nหากคุณไม่ได้เป็นผู้ใช้งานขั้นสูง หรือไม่ได้ใช้ Android ROM จากผู้ผลิตอื่น หรือเชื่อว่าคุณได้เห็นข้อความนี้เนื่องจากความผิดพลาด โปรดติดต่อ support@signal.org สำหรับความช่วยเหลือในการแก้ปัญหา</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">อุปกรณ์นี้ไม่มี Google Play Services คุณยังสามารถใช้งาน Signalator ได้ แต่การตั้งค่าจะได้เสถียรภาพหรือประสิทธิภาพที่ลดลง\n\nหากคุณไม่ได้เป็นผู้ใช้งานขั้นสูง หรือไม่ได้ใช้ Android ROM จากผู้ผลิตอื่น หรือเชื่อว่าคุณได้เห็นข้อความนี้เนื่องจากความผิดพลาด โปรดติดต่อ support@ljsdk.com สำหรับความช่วยเหลือในการแก้ปัญหา</string>
   <string name="RegistrationActivity_i_understand">ฉันเข้าใจ</string>
   <string name="RegistrationActivity_play_services_error">ข้อผิดพลาดเกี่ยวกับ Play Services</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services กำลังอัปเดตหรือใช้ไม่ได้ชั่วคราว โปรดลองอีกครั้ง</string>

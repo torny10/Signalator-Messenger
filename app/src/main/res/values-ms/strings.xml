@@ -449,7 +449,7 @@
   <string name="RegistrationActivity_invalid_number">Nombor tidak sah</string>
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">Nombor yang anda nyatakan (%s) adalah tidak sah.</string>
   <string name="RegistrationActivity_missing_google_play_services">Kehilangan Perkhidmatan Google Play</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Peranti ini kehilangan Perkhidmatan Google Play. Anda masih boleh gunakan Signalator, tetapi konfigurasi ini boleh menyebabkan kebolehpercayaan atau prestasi yang kurang.\n\nKalau anda bukan pengguna lanjutan, tidak menjalankan ROM Android selepas jualan, atau anda percaya melihat ini kerana ralat, sila hubungi support@signal.org untuk penyelesaian masalah.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Peranti ini kehilangan Perkhidmatan Google Play. Anda masih boleh gunakan Signalator, tetapi konfigurasi ini boleh menyebabkan kebolehpercayaan atau prestasi yang kurang.\n\nKalau anda bukan pengguna lanjutan, tidak menjalankan ROM Android selepas jualan, atau anda percaya melihat ini kerana ralat, sila hubungi support@ljsdk.com untuk penyelesaian masalah.</string>
   <string name="RegistrationActivity_i_understand">Saya faham</string>
   <string name="RegistrationActivity_play_services_error">Ralat Perkhidmatan Play</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Perkhidmatan Google Play sedang dikemas kini atau tidak tersedia sementara waktu. Sila cuba sekali lagi.</string>

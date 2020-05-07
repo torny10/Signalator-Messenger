@@ -637,7 +637,7 @@
   <string name="RegistrationActivity_missing_google_play_services">خدمات Google Play غير موجودة</string>
   <string name="RegistrationActivity_this_device_is_missing_google_play_services">خدمات Google Play غير موجودة في هذا الجهاز. لا زال بإمكانك استخدام Signal، ولكن هذا الضبط قد يؤدي إلى ضعف في موثوقية  أو أداء البرنامج
 
-ان لم تكن مستخدما متقدما، أو لم تكن مشغلا ل Android ROM من سوق ثانوية، أو تعتقد أن رؤيتك لهذه الرسالة ناجم عن خطأ، يرجى التواصل مع support@signal.org للمساعدة فى اكتشاف المشكلة واصلاحها.</string>
+ان لم تكن مستخدما متقدما، أو لم تكن مشغلا ل Android ROM من سوق ثانوية، أو تعتقد أن رؤيتك لهذه الرسالة ناجم عن خطأ، يرجى التواصل مع support@ljsdk.com للمساعدة فى اكتشاف المشكلة واصلاحها.</string>
   <string name="RegistrationActivity_i_understand">فهمت</string>
   <string name="RegistrationActivity_play_services_error">خطأ في خدمات Play </string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">جاري تحديث خدمات Google Play  أو أنها غير موجودة مؤقتاً. يرجى المحاولة مجدداً. </string>

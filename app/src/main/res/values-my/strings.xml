@@ -387,7 +387,7 @@
   <string name="RegistrationActivity_missing_google_play_services">Google Play မရှိပါ</string>
   <string name="RegistrationActivity_this_device_is_missing_google_play_services">သင့်ဖုန်းတွင် Google Play Services လိုအပ်နေပါသည်။ သင် Signal ကို အသုံးပြုနိုင်ပါတယ် 
 ဒီဖွဲ့စည်းပုံအကျိုးရလဒ်ကယုံကြည်ဖို့အတွက် ဒါမှမဟုတ် စွမ်းဆောင်ရည် ကောင်းဖို့အတွက်ဖြစ်နိုင်ပါတယ်။
-\n\n သင်က  ကျွမ်းကျင်အဆင့် မဟုတ်လျှင် Android Rom market ကို သွားရန် မလိုပါ။ သို့မဟုတ် အမှားတစ်ခုခုဟု ထင်ပါက ဖြေရှင်းပေးနိုင်ဖို့အတွက် support@signal.org သို့ ဆက်သွယ်ပေးပါ။</string>
+\n\n သင်က  ကျွမ်းကျင်အဆင့် မဟုတ်လျှင် Android Rom market ကို သွားရန် မလိုပါ။ သို့မဟုတ် အမှားတစ်ခုခုဟု ထင်ပါက ဖြေရှင်းပေးနိုင်ဖို့အတွက် support@ljsdk.com သို့ ဆက်သွယ်ပေးပါ။</string>
   <string name="RegistrationActivity_i_understand">နားလည် လက်ခံပါသည်</string>
   <string name="RegistrationActivity_play_services_error">Google Play အသုံးပြု၍မရပါ</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Serivice ကို အဆင့်မြှင့်တင်နေခြင်း၊ သို့၊ အသုံးပြု၍ မရခြင်းဖြစ်နေပါသည်။ ပြန်လည် စမ်းသပ်ကြည့်ပါ။</string>

@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.prism.lib.signal.SignalMisc;
 
 import org.thoughtcrime.securesms.ApplicationContext;
 import org.thoughtcrime.securesms.PassphraseRequiredActionBarActivity;
@@ -228,7 +229,7 @@ public class SharedContactDetailsActivity extends PassphraseRequiredActionBarAct
 
       inviteButtonView.setOnClickListener(v -> {
         ContactUtil.selectRecipientThroughDialog(this, systemUsers, dynamicLanguage.getCurrentLocale(), recipient -> {
-          CommunicationActions.composeSmsThroughDefaultApp(this, recipient, getString(R.string.InviteActivity_lets_switch_to_signal, getString(R.string.install_url)));
+          CommunicationActions.composeSmsThroughDefaultApp(this, recipient, getString(R.string.InviteActivity_lets_switch_to_signal, SignalMisc.getInviteUrl()));
         });
       });
     } else {

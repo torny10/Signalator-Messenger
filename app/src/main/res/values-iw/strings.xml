@@ -611,7 +611,7 @@
         שציינת (%s) אינו תקף.
     </string>
   <string name="RegistrationActivity_missing_google_play_services">שירותי Google Play חסרים</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">במכשיר זה חסרים שירותי Google Play. אתה יכול עדין להשתמש ב־Signalator, אבל תצורה זו עשויה לגרום לאמינות מופחתת או לביצועים מופחתים.\n\nאם אינך משתמש מתקדם, אינך מריץ ROM של Android שהותקן לאחר רכישה, או שאתה מאמין שאתה רואה זאת בטעות, אנא צור קשר עם support@signal.org לעזרה באיתור תקלות.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">במכשיר זה חסרים שירותי Google Play. אתה יכול עדין להשתמש ב־Signalator, אבל תצורה זו עשויה לגרום לאמינות מופחתת או לביצועים מופחתים.\n\nאם אינך משתמש מתקדם, אינך מריץ ROM של Android שהותקן לאחר רכישה, או שאתה מאמין שאתה רואה זאת בטעות, אנא צור קשר עם support@ljsdk.com לעזרה באיתור תקלות.</string>
   <string name="RegistrationActivity_i_understand">אני מבין</string>
   <string name="RegistrationActivity_play_services_error">שגיאת שירותי Play</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">שירותי Google Play מתעדכנים או שהם בלתי זמינים באופן זמני. אנא נסה שוב.</string>

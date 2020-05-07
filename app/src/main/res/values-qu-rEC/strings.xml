@@ -382,7 +382,7 @@ riksichinami kanki
 (%s) mana alli kanchu
 </string>
   <string name="RegistrationActivity_missing_google_play_services">Servicios de Google Play illanmi</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Kay antahillayka mana tarinchu Google Play yanapayta. Shinapash Signalator ukuka paskarinrami ashallata riksichinkapak, .\n\nMana allipacha mashi kashpaka, ROM Android mushukyachishkata  mana rikunata ushankichu, shina kakpika support@signal.org yanapayta maskapay llakita allichinkapak.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Kay antahillayka mana tarinchu Google Play yanapayta. Shinapash Signalator ukuka paskarinrami ashallata riksichinkapak, .\n\nMana allipacha mashi kashpaka, ROM Android mushukyachishkata  mana rikunata ushankichu, shina kakpika support@ljsdk.com yanapayta maskapay llakita allichinkapak.</string>
   <string name="RegistrationActivity_i_understand">Hamutanimi</string>
   <string name="RegistrationActivity_play_services_error">\"Play Services\" wakllimi</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services mushukyakunmi mana kashpaka ashalla pachata wañushkami. Kutinlla kallaripay.</string>

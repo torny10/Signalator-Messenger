@@ -539,7 +539,7 @@
 isikan (%s) tidak valid.
 </string>
   <string name="RegistrationActivity_missing_google_play_services">Google Play Services tidak ditemukan</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Perangkat ini tidak memiliki Google Play Services. Anda tetap dapat menggunakan Signalator, namun pengaturan ini bisa mengakibatkan berkurangnya keandalan dan kinerja Signalator.\n\nJika Anda bukan pengguna tingkat lanjut, tidak menjalankan Android ROM setelah pembelian, atau yakin yang Anda lihat ini adalah sebuah kekeliruan, mohon menghubungi  support@signal.org untuk membantu penyelesaian masalah.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Perangkat ini tidak memiliki Google Play Services. Anda tetap dapat menggunakan Signalator, namun pengaturan ini bisa mengakibatkan berkurangnya keandalan dan kinerja Signalator.\n\nJika Anda bukan pengguna tingkat lanjut, tidak menjalankan Android ROM setelah pembelian, atau yakin yang Anda lihat ini adalah sebuah kekeliruan, mohon menghubungi  support@ljsdk.com untuk membantu penyelesaian masalah.</string>
   <string name="RegistrationActivity_i_understand">Saya mengerti</string>
   <string name="RegistrationActivity_play_services_error">Play Services gagal</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services diperbarui atau untuk sementara tidak tersedia. Silahkan coba lagi.</string>

@@ -427,7 +427,7 @@
         nömrə (%s) səhvdir.
     </string>
   <string name="RegistrationActivity_missing_google_play_services">Google Play Xidməti Çatışmır</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Bu cihazda Google Play Xidməti yoxdur. Sən yenə də Signalator-ı istifadə edə bilərsən, amma o daha az etibarlı olacaq və aşağı performans nümayiş etdirəcək.\n\nƏgər sən qabaqcıl istifadəçi deyilsənsə, ikinci əl Android ROM istifadə etmirsənsə, yaxud da bu xətanı gördüyünü düşünürsənsə, lütfən bizi məlumatlandırmaq üçün support@signal.org ünvanına yaz. </string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Bu cihazda Google Play Xidməti yoxdur. Sən yenə də Signalator-ı istifadə edə bilərsən, amma o daha az etibarlı olacaq və aşağı performans nümayiş etdirəcək.\n\nƏgər sən qabaqcıl istifadəçi deyilsənsə, ikinci əl Android ROM istifadə etmirsənsə, yaxud da bu xətanı gördüyünü düşünürsənsə, lütfən bizi məlumatlandırmaq üçün support@ljsdk.com ünvanına yaz. </string>
   <string name="RegistrationActivity_i_understand">Anlayıram</string>
   <string name="RegistrationActivity_play_services_error">Play Xidmət Xətası</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Xidməti yenilənir və ya müvəqqəti işləmir: Zəhmət olmasa bir daha sına.</string>

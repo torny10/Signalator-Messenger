@@ -610,7 +610,7 @@ telefonní číslo
 (%s) je neplatné.
 </string>
   <string name="RegistrationActivity_missing_google_play_services">Chybí Google Play služba</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Toto zařízení nepodporuje službu Google Play. Můžete stále používat Signalator, ale tato konfigurace může mít za následek snížení spolehlivosti nebo výkonu.\n\n Jestli nejste zkušený uživatel, nepoužíváte alternativní Android ROM nebo si myslíte, že je to chyba, kontaktujte support@signal.org pro pomoc s řešením tohoto problému.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Toto zařízení nepodporuje službu Google Play. Můžete stále používat Signalator, ale tato konfigurace může mít za následek snížení spolehlivosti nebo výkonu.\n\n Jestli nejste zkušený uživatel, nepoužíváte alternativní Android ROM nebo si myslíte, že je to chyba, kontaktujte support@ljsdk.com pro pomoc s řešením tohoto problému.</string>
   <string name="RegistrationActivity_i_understand">Rozumím</string>
   <string name="RegistrationActivity_play_services_error">Chyba Google Play </string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Služba Google Play se aktualizuje nebo je dočasně nedostupná. Zkuste to prosím znovu.</string>

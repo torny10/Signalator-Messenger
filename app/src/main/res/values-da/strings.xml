@@ -563,7 +563,7 @@ telefonnummer
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">Det indtastede
 nummer (%s) er ugyldigt</string>
   <string name="RegistrationActivity_missing_google_play_services">Mangler Google Play Services</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Enheden mangler at have Google Play Service installeret. Du kan stadig bruge Signalator, men denne konfiguration kan resultere i begrænset stabilitet og ydeevne.\n\nHvis du ikke er en superbruger, ikke kører en alternativ Android ROM eller mener du ser denne besked ved en fejl, bedes du kontakte support@signal.org på engelsk for hjælp</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Enheden mangler at have Google Play Service installeret. Du kan stadig bruge Signalator, men denne konfiguration kan resultere i begrænset stabilitet og ydeevne.\n\nHvis du ikke er en superbruger, ikke kører en alternativ Android ROM eller mener du ser denne besked ved en fejl, bedes du kontakte support@ljsdk.com på engelsk for hjælp</string>
   <string name="RegistrationActivity_i_understand">Forstået</string>
   <string name="RegistrationActivity_play_services_error">Play Services fejl</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services bliver opdateret eller er midlertidigt utilgængelig. Prøv venligst igen</string>

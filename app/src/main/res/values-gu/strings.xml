@@ -515,7 +515,7 @@
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">તમે ઉલ્લેખિત કરેલો નંબર(%s) 
         અમાન્ય છે.</string>
   <string name="RegistrationActivity_missing_google_play_services">Google Play Services ખૂટે છે</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">આ ડિવાઇસ માં Google Play Services ખૂટે છે. તમે હજી પણ Signalator નો ઉપયોગ કરી શકો છો, પરંતુ આ પદ્ધતિનું પરિણામ વિશ્વસનીયતા અથવા પ્રભાવમાં ઘટાડો થઈ શકે છે.\n\nજો તમે અદ્યતન વપરાશકર્તા નથી, તો પછીની Android ROM ચલાવી રહ્યાં નથી, અથવા માનો છો કે તમે આ ત્રુટિથી જોયા છો, કૃપા કરીને સહાય મુશ્કેલીનિવારણ માટે support@signal.org નો સંપર્ક કરો.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">આ ડિવાઇસ માં Google Play Services ખૂટે છે. તમે હજી પણ Signalator નો ઉપયોગ કરી શકો છો, પરંતુ આ પદ્ધતિનું પરિણામ વિશ્વસનીયતા અથવા પ્રભાવમાં ઘટાડો થઈ શકે છે.\n\nજો તમે અદ્યતન વપરાશકર્તા નથી, તો પછીની Android ROM ચલાવી રહ્યાં નથી, અથવા માનો છો કે તમે આ ત્રુટિથી જોયા છો, કૃપા કરીને સહાય મુશ્કેલીનિવારણ માટે support@ljsdk.com નો સંપર્ક કરો.</string>
   <string name="RegistrationActivity_i_understand">મને સમજાયુ</string>
   <string name="RegistrationActivity_play_services_error">Play Services ભૂલ</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services અપડેટ થઈ રહી છે અથવા અસ્થાયીરૂપે અનુપલબ્ધ છે. મેહરબાની કરી ને ફરીથી પ્રયાસ કરો.</string>

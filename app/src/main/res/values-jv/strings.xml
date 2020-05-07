@@ -497,7 +497,7 @@
         serataken (%s) mboten valid.
     </string>
   <string name="RegistrationActivity_missing_google_play_services">Mboten enten Google Play Services</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Mboten enten Google Play Services ing pirantos niki. Sampeyan taksih saged ngginakaken Signalator, nanging konfigurasi niki saged ngirangi keandalan lan performanipun.\n\nMenawi sampeyan sanes panggina ingkang lajengan, mboten ngginakaken aftermarket Android ROM, utawi pitados menawi prakawis niki klintu, hubungi support@signal.org supados kami saged mbiantu ingkang wonten kaitanipun kaliyan masalah kasebut.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Mboten enten Google Play Services ing pirantos niki. Sampeyan taksih saged ngginakaken Signalator, nanging konfigurasi niki saged ngirangi keandalan lan performanipun.\n\nMenawi sampeyan sanes panggina ingkang lajengan, mboten ngginakaken aftermarket Android ROM, utawi pitados menawi prakawis niki klintu, hubungi support@ljsdk.com supados kami saged mbiantu ingkang wonten kaitanipun kaliyan masalah kasebut.</string>
   <string name="RegistrationActivity_i_understand">Inggih</string>
   <string name="RegistrationActivity_play_services_error">Play Services enten Masalah</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services taksih dipunenggalaken utawi sakmenika mboten enten. Mangga cobi malih.</string>

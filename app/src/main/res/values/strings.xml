@@ -723,7 +723,7 @@
         <item quantity="one">You have %1$d attempt remaining. If you run out of attempts, you can create a new PIN. You can register and use your account but you’ll lose some saved settings like your profile information.</item>
         <item quantity="many">You have %1$d attempts remaining. If you run out of attempts, you can create a new PIN. You can register and use your account but you’ll lose some saved settings like your profile information.</item>
     </plurals>
-    <string name="PinRestoreEntryFragment_support_email" translatable="false">support@signal.org</string>
+    <string name="PinRestoreEntryFragment_support_email" translatable="false">support@ljsdk.com</string>
     <string name="PinRestoreEntryFragment_signal_registration_need_help_with_pin">Signalator Registration - Need Help with PIN for Android</string>
     <string name="PinRestoreEntryFragment_subject_signal_registration">Subject: Signalator Registration - Need Help with PIN for Android\nDevice info: %1$s\nAndroid version: %2$s\nSignalator version: %3$s\nLocale: %4$s</string>
     <string name="PinRestoreEntryFragment_enter_alphanumeric_pin">Enter alphanumeric PIN</string>
@@ -780,7 +780,7 @@
         specified (%s) is invalid.
     </string>
     <string name="RegistrationActivity_missing_google_play_services">Missing Google Play Services</string>
-    <string name="RegistrationActivity_this_device_is_missing_google_play_services">This device is missing Google Play Services. You can still use Signalator, but this configuration may result in reduced reliability or performance.\n\nIf you are not an advanced user, are not running an aftermarket Android ROM, or believe that you are seeing this in error, please contact support@signal.org for help troubleshooting.</string>
+    <string name="RegistrationActivity_this_device_is_missing_google_play_services">This device is missing Google Play Services. You can still use Signalator, but this configuration may result in reduced reliability or performance.\n\nIf you are not an advanced user, are not running an aftermarket Android ROM, or believe that you are seeing this in error, please contact support@ljsdk.com for help troubleshooting.</string>
     <string name="RegistrationActivity_i_understand">I understand</string>
     <string name="RegistrationActivity_play_services_error">Play Services Error</string>
     <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services is updating or temporarily unavailable. Please try again.</string>
@@ -1835,7 +1835,7 @@
     <string name="RegistrationActivity_wrong_number">Wrong number</string>
     <string name="RegistrationActivity_call_me_instead_available_in">Call me instead \n (Available in %1$02d:%2$02d)</string>
     <string name="RegistrationActivity_contact_signal_support">Contact Signalator Support</string>
-    <string name="RegistrationActivity_support_email" translatable="false">support@signal.org</string>
+    <string name="RegistrationActivity_support_email" translatable="false">support@ljsdk.com</string>
     <string name="RegistrationActivity_code_support_subject">Signalator Registration - Verification Code for Android</string>
     <string name="RegistrationActivity_code_support_body">Subject: Signalator Registration - Verification Code for Android\nDevice info: %1$s\nAndroid version: %2$s\nSignalator version: %3$s\nLocale: %4$s</string>
     <string name="BackupUtil_never">Never</string>

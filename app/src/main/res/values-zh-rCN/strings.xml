@@ -620,7 +620,7 @@
         (%s) 无效。
     </string>
   <string name="RegistrationActivity_missing_google_play_services">Google Play 服务缺失</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">设备缺少 Google Play 服务框架，可使用 Signalator，但功能与稳定性将受到影响。\n\n如果您不是高级用户，或者运行的为原厂安卓系统，或者认为该提示有误，请联系 support@signal.org 获取帮助。</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">设备缺少 Google Play 服务框架，可使用 Signalator，但功能与稳定性将受到影响。\n\n如果您不是高级用户，或者运行的为原厂安卓系统，或者认为该提示有误，请联系 support@ljsdk.com 获取帮助。</string>
   <string name="RegistrationActivity_i_understand">我明白。</string>
   <string name="RegistrationActivity_play_services_error">Google Play 服务错误</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play 服务正在更新或者暂时不可用，请稍后再试。</string>

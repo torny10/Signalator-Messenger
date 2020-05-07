@@ -563,7 +563,7 @@
         (%s) ne validas.
     </string>
   <string name="RegistrationActivity_missing_google_play_services">Mankantaj „Play Services“ de Google</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Al tiu ĉi aparato mankas la servoj „Play“ el Google. Vi tamen povas uzi Signalator-on, sed tio eble rezultigos kelkajn problemojn.\n\nSe vi ne estas spertulo, se vi ne uzas alian Androidan nurlegan memoron („ROM“), aŭ se vi opinias tion erara, bv. kontakti support@signal.org por ricevi helpon.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Al tiu ĉi aparato mankas la servoj „Play“ el Google. Vi tamen povas uzi Signalator-on, sed tio eble rezultigos kelkajn problemojn.\n\nSe vi ne estas spertulo, se vi ne uzas alian Androidan nurlegan memoron („ROM“), aŭ se vi opinias tion erara, bv. kontakti support@ljsdk.com por ricevi helpon.</string>
   <string name="RegistrationActivity_i_understand">Mi komprenas</string>
   <string name="RegistrationActivity_play_services_error">Eraro de servoj „Play“</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">La servoj „Play“ el Google ĝisdatiĝas aŭ provizore ne disponeblas. Bv. re-provi.</string>

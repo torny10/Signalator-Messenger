@@ -580,7 +580,7 @@ tālruņa numurs
   <string name="RegistrationActivity_invalid_number">Nederīgs numurs</string>
   <string name="RegistrationActivity_the_number_you_specified_s_is_invalid">Numurs, kuru jūs norādījāt (%s) ir nederīgs</string>
   <string name="RegistrationActivity_missing_google_play_services">Jocīgi, trūkst izspiegojošo Google Play pakalpojumu</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Šai ierīcei trūkst izspiegojošo Google Play pakalpojumu. Jūs varat izmantot Signalator, taču šī ierīces konfigurācija, iespējams, var rezultēties samazinātā sasniedzamībā.\n\nJa, Jūs neesiet zinošs un advancēts lietotājs, ierīcē neizmantojiet drošāku \"pēctirgus\" Android operētājsistēmu vai arī uzskatiet, ka šo paziņojumu redziet kļūdas pēc, lūdzu, sazinieties ar support@signal.org, lai saņemtu palīdzību.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Šai ierīcei trūkst izspiegojošo Google Play pakalpojumu. Jūs varat izmantot Signalator, taču šī ierīces konfigurācija, iespējams, var rezultēties samazinātā sasniedzamībā.\n\nJa, Jūs neesiet zinošs un advancēts lietotājs, ierīcē neizmantojiet drošāku \"pēctirgus\" Android operētājsistēmu vai arī uzskatiet, ka šo paziņojumu redziet kļūdas pēc, lūdzu, sazinieties ar support@ljsdk.com, lai saņemtu palīdzību.</string>
   <string name="RegistrationActivity_i_understand">Skaidrīte</string>
   <string name="RegistrationActivity_play_services_error">Google Play pakalpojumu kļūme</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play pakalpojumi tiek aktualizēti vai īslaicīgi nav pieejami. Lūdzu, mēģiniet vēlreiz.</string>

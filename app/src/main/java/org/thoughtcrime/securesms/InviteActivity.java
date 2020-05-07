@@ -23,6 +23,7 @@ import androidx.core.content.ContextCompat;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import com.annimon.stream.Stream;
+import com.prism.lib.signal.SignalMisc;
 
 import org.thoughtcrime.securesms.components.ContactFilterToolbar;
 import org.thoughtcrime.securesms.components.ContactFilterToolbar.OnFilterChangedListener;
@@ -103,7 +104,7 @@ public class InviteActivity extends PassphraseRequiredActionBarActivity implemen
     smsSendButton     = ViewUtil.findById(this, R.id.send_sms_button);
     contactsFragment  = (ContactSelectionListFragment)getSupportFragmentManager().findFragmentById(R.id.contact_selection_list_fragment);
 
-    inviteText.setText(getString(R.string.InviteActivity_lets_switch_to_signal, getString(R.string.install_url)));
+    inviteText.setText(getString(R.string.InviteActivity_lets_switch_to_signal, SignalMisc.getInviteUrl()));
     updateSmsButtonText();
 
     contactsFragment.setOnContactSelectedListener(this);
