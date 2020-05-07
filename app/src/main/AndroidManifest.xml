@@ -717,12 +717,12 @@
     <provider android:name=".providers.PartProvider"
               android:grantUriPermissions="true"
               android:exported="false"
-              android:authorities="org.thoughtcrime.provider.securesms" />
+              android:authorities="${applicationId}.provider.securesms" />
 
     <provider android:name=".providers.MmsBodyProvider"
               android:grantUriPermissions="true"
               android:exported="false"
-              android:authorities="org.thoughtcrime.provider.securesms.mms" />
+              android:authorities="${applicationId}.provider.securesms.mms" />
 
     <provider android:name="androidx.core.content.FileProvider"
               android:authorities="${applicationId}.fileprovider"
