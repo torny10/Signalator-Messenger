@@ -4,6 +4,9 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 
+import com.prism.lib.vault.signal.VaultVariant;
+
+import org.thoughtcrime.securesms.logging.Log;
 import org.thoughtcrime.securesms.util.DynamicNoActionBarTheme;
 import org.thoughtcrime.securesms.util.DynamicTheme;
 
@@ -36,6 +39,7 @@ public class MainActivity extends PassphraseRequiredActionBarActivity {
   public void onBackPressed() {
     if (!navigator.onBackPressed()) {
       super.onBackPressed();
+      VaultVariant.instance().releaseCertificate();
     }
   }
 
