@@ -11,7 +11,7 @@ import com.prism.commons.utils.Tag;
 import com.prism.hider.vault.commons.FingerprintUtils;
 import com.prism.hider.vault.commons.Vault;
 import com.prism.hider.vault.commons.certifier.FingerprintCertifier;
-import com.prism.lib.signal.SignalPreference;
+import com.prism.lib.signal.ExtSignalPreference;
 import com.prism.lib.vault.signal.VaultVariant;
 
 import org.thoughtcrime.securesms.ApplicationPreferencesActivity;
@@ -98,11 +98,11 @@ public class DisguisePreferenceFragment extends CorrectedPreferenceFragment {
 
     private void initializeHideFromRecent() {
         SwitchPreferenceCompat hideFromRecentPref = (SwitchPreferenceCompat) findPreference(PREF_HIDE_FROM_RECENT);
-        boolean hide = SignalPreference.hideFromRecent.get(getContext()).read();
+        boolean hide = ExtSignalPreference.hideFromRecent.get(getContext()).read();
         hideFromRecentPref.setChecked(hide);
         hideFromRecentPref.setOnPreferenceChangeListener((preference, newValue) -> {
             boolean checked = (Boolean) newValue;
-            SignalPreference.hideFromRecent.get(getContext()).save(checked);
+            ExtSignalPreference.hideFromRecent.get(getContext()).save(checked);
             RecentUtils.setHideFromRecentEnable(getContext(), checked);
             return true;
         });

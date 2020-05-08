@@ -17,6 +17,7 @@
  */
 package org.thoughtcrime.securesms;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
@@ -81,6 +82,12 @@ public class ApplicationPreferencesActivity extends PassphraseRequiredActionBarA
     dynamicLanguage.onCreate(this);
   }
 
+  public static Intent getDisguisePreferenceIntent(Context context) {
+    Intent intent = new Intent(context, ApplicationPreferencesActivity.class);
+    intent.addCategory(PREFERENCE_CATEGORY_DISGUISE);
+    return intent;
+  }
+
   @Override
   protected void onCreate(Bundle icicle, boolean ready) {
     //noinspection ConstantConditions
@@ -88,6 +95,8 @@ public class ApplicationPreferencesActivity extends PassphraseRequiredActionBarA
 
     if (getIntent() != null && getIntent().getCategories() != null && getIntent().getCategories().contains("android.intent.category.NOTIFICATION_PREFERENCES")) {
       initFragment(android.R.id.content, new NotificationsPreferenceFragment());
+    } else if (getIntent() != null && getIntent().getCategories() != null && getIntent().getCategories().contains(PREFERENCE_CATEGORY_DISGUISE)) {
+      initFragment(android.R.id.content, new DisguisePreferenceFragment());
     } else if (icicle == null) {
       initFragment(android.R.id.content, new ApplicationPreferenceFragment());
     }

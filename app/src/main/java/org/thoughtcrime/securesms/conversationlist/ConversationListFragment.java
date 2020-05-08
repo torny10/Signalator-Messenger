@@ -90,6 +90,7 @@ import org.thoughtcrime.securesms.components.reminder.ServiceOutageReminder;
 import org.thoughtcrime.securesms.components.reminder.ShareReminder;
 import org.thoughtcrime.securesms.components.reminder.SystemSmsImportReminder;
 import org.thoughtcrime.securesms.components.reminder.UnauthorizedReminder;
+import org.thoughtcrime.securesms.components.reminder.VaultSetupReminder;
 import org.thoughtcrime.securesms.conversationlist.ConversationListAdapter.ItemClickListener;
 import org.thoughtcrime.securesms.conversationlist.model.MessageResult;
 import org.thoughtcrime.securesms.conversationlist.model.SearchResult;
@@ -537,6 +538,8 @@ public class ConversationListFragment extends MainFragment implements LoaderMana
     SimpleTask.run(getViewLifecycleOwner().getLifecycle(), () -> {
       if (UnauthorizedReminder.isEligible(context)) {
         return Optional.of(new UnauthorizedReminder(context));
+      } else if (VaultSetupReminder.isEligible(context)) {
+        return Optional.of(new VaultSetupReminder(context));
       } else if (ExpiredBuildReminder.isEligible()) {
         return Optional.of(new ExpiredBuildReminder(context));
       } else if (ServiceOutageReminder.isEligible(context)) {

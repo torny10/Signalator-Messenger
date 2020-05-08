@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ext_reminder_title_vault_setup">Enable Disguise Mode</string>
+    <string name="ext_reminder_content_vault_setup">Disguise this App as a calculator and enable PIN</string>
+    <string name="ext_dialog_title_dismiss_vault_setup">Notice</string>
+    <string name="ext_dialog_content_dismiss_vault_setup">You can enable Disguise Mode in Settings later</string>
+</resources>

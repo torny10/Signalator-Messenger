@@ -25,7 +25,7 @@ public class GlobalActivityLifecycleCallbacks implements Application.ActivityLif
             firstTime = false;
 //            if (!VaultVariant.instance().isSetup(activity))
 //                VaultVariant.instance().setupVault(activity, false);
-            RecentUtils.setHideFromRecentEnable(activity, SignalPreference.hideFromRecent.get(activity).read());
+            RecentUtils.setHideFromRecentEnable(activity, ExtSignalPreference.hideFromRecent.get(activity).read());
         }
     }
 

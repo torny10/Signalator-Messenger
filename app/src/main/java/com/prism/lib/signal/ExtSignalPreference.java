@@ -4,7 +4,7 @@ import com.prism.commons.model.PreferenceModelHolder;
 import com.prism.commons.utils.InitOnceP;
 import com.prism.commons.utils.PreferenceWrapper;
 
-public class SignalPreference {
+public class ExtSignalPreference {
 
     private static final String PREFERENCE_NAME = "signal_preference";
 
@@ -26,5 +26,11 @@ public class SignalPreference {
     private static final String HIDE_FROM_RECENT = "HIDE_FROM_RECENT";
     public static PreferenceModelHolder<Boolean> hideFromRecent = new PreferenceModelHolder<>(
             wrapperHolder.get(null), HIDE_FROM_RECENT, false,
+            Boolean.class);
+
+
+    private static final String SHOW_VAULT_SETUP_REMINDER = "SHOW_VAULT_SETUP_REMINDER";
+    public static PreferenceModelHolder<Boolean> showVaultSetupReminder = new PreferenceModelHolder<>(
+            wrapperHolder.get(null), SHOW_VAULT_SETUP_REMINDER, true,
             Boolean.class);
 }
