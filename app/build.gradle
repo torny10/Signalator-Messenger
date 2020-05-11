@@ -90,6 +90,11 @@ def abiPostFix = ['universal'   : 0,
                   'x86'         : 3,
                   'x86_64'      : 4]
 
+def keystorePropertiesFile = rootProject.file("signing.properties");
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+
 android {
     flavorDimensions "none"
     compileSdkVersion 28
@@ -98,6 +103,15 @@ android {
 
     dexOptions {
         javaMaxHeapSize "4g"
+    }
+
+    signingConfigs {
+        play {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
     }
 
     defaultConfig {
@@ -220,6 +234,7 @@ android {
     productFlavors {
         play {
             dimension "none"
+            signingConfig signingConfigs.play
             ext.websiteUpdateUrl = "null"
             buildConfigField "boolean", "PLAY_STORE_DISABLED", "false"
             buildConfigField "String", "NOPLAY_UPDATE_URL", "$ext.websiteUpdateUrl"
@@ -449,15 +464,15 @@ task signProductionWebsiteRelease {
     }
 }
 
-tasks.whenTaskAdded { task ->
-    if (task.name.equals("assemblePlayRelease")) {
-        task.finalizedBy signProductionPlayRelease
-    }
-
-    if (task.name.equals("assembleWebsiteRelease")) {
-        task.finalizedBy signProductionWebsiteRelease
-    }
-}
+//tasks.whenTaskAdded { task ->
+//    if (task.name.equals("assemblePlayRelease")) {
+//        task.finalizedBy signProductionPlayRelease
+//    }
+//
+//    if (task.name.equals("assembleWebsiteRelease")) {
+//        task.finalizedBy signProductionWebsiteRelease
+//    }
+//}
 
 def getLastCommitTimestamp() {
     new ByteArrayOutputStream().withStream { os ->
