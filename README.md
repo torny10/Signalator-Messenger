@@ -1,8 +1,28 @@
-# Signal Android 
+# Signalator Messenger
 
+Sinalator is a client for signal based on Signal-Android
+https://github.com/signalapp/Signal-Android
 Signal is a messaging app for simple private communication with friends.
 
-Signal uses your phone's data connection (WiFi/3G/4G) to communicate securely, optionally supports plain SMS/MMS to function as a unified messenger, and can also encrypt the stored messages on your phone.
+Signalator help Signal users to hide their Signal Clients on their phone
+
+
+## building apk
+1. setup android devlop environment
+2. clone git repository
+3. add signing.properties in root folder like
+```
+storePassword=your_keystore_pwd
+keyPassword=your_key_pwd
+keyAlias=your_alias
+storeFile=your_key_store_file_path
+```
+4. build cmd
+```
+./gradlew assemblePlayRelease
+```
+
+<!-- Signal uses your phone's data connection (WiFi/3G/4G) to communicate securely, optionally supports plain SMS/MMS to function as a unified messenger, and can also encrypt the stored messages on your phone.
 
 Currently available on the Play store.
 
@@ -65,4 +85,8 @@ Copyright 2013-2020 Open Whisper Systems
 
 Licensed under the GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
 
-Google Play and the Google Play logo are trademarks of Google Inc.
+Google Play and the Google Play logo are trademarks of Google Inc. -->
+
+## License
+
+Copyright 2020 Prism Lab
