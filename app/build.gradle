@@ -82,6 +82,8 @@ protobuf {
 
 def canonicalVersionCode = 620
 def canonicalVersionName = "4.59.0"
+def modifyVersionCode = 1000
+def modifyVersionName = "1.0.0"
 
 def postFixSize = 10
 def abiPostFix = ['universal'   : 0,
@@ -120,7 +122,7 @@ android {
 
         resValue 'string', 'package_name', applicationId
         versionCode canonicalVersionCode * postFixSize
-        versionName canonicalVersionName
+        versionName modifyVersionName
 
         minSdkVersion 19
         targetSdkVersion 28
@@ -256,7 +258,8 @@ android {
 
             if (postFix >= postFixSize) throw new AssertionError("postFix is too large")
 
-            output.versionCodeOverride = canonicalVersionCode * postFixSize + postFix
+//            output.versionCodeOverride = canonicalVersionCode * postFixSize + postFix
+            output.versionCodeOverride = modifyVersionCode * postFixSize + postFix
         }
     }
 
