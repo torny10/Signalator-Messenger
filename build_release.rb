@@ -2,10 +2,10 @@
 require 'fileutils'
 
 
-# unless system('./gradlew --stacktrace assemblePlayRelease')
-#     puts "BUILD FAILED"
-#     exit $?
-# end
+unless system('./gradlew --stacktrace assemblePlayRelease')
+    puts "BUILD FAILED"
+    exit $?
+end
 
 apk_dir="app/build/outputs/apk/play/release"
 
