@@ -92,10 +92,13 @@ def abiPostFix = ['universal'   : 0,
                   'x86'         : 3,
                   'x86_64'      : 4]
 
-def keystorePropertiesFile = rootProject.file("signing.properties");
+def keystoreConfigFilePath = "signing.properties"
+def specificSigning = new File(keystoreConfigFilePath).exists()
 def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-
+if (specificSigning) {
+    def keystorePropertiesFile = rootProject.file(keystoreConfigFilePath);
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
 
 android {
     flavorDimensions "none"
@@ -107,12 +110,14 @@ android {
         javaMaxHeapSize "4g"
     }
 
-    signingConfigs {
-        play {
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
+    if (specificSigning) {
+        signingConfigs {
+            play {
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+            }
         }
     }
 
@@ -236,7 +241,9 @@ android {
     productFlavors {
         play {
             dimension "none"
-            signingConfig signingConfigs.play
+            if (specificSigning) {
+                signingConfig signingConfigs.play
+            }
             ext.websiteUpdateUrl = "null"
             buildConfigField "boolean", "PLAY_STORE_DISABLED", "false"
             buildConfigField "String", "NOPLAY_UPDATE_URL", "$ext.websiteUpdateUrl"
